@@ -1,0 +1,64 @@
+/* Ensure the input group takes the full width of its container */
+.input-group {
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* Adjust main content padding to account for the navbar */
+.main-content {
+    padding-top: 100px; /* Adjust this value according to the height of your navbar */
+}
+
+/* Make the search input flexible and longer */
+.input-group .form-control {
+    flex: 1;
+    max-width: none;
+    min-width: 300px;
+}
+
+/* Add space between the elements in the input group */
+.input-group-text, .btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Style for the image grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Style for individual image cards */
+.image-card {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+/* Style for images inside cards */
+.image-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Style for image info below the image */
+.image-info {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.image-name {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.image-price {
+    font-size: 1rem;
+    color: #888;
+    margin: 0;
+}
